@@ -1,16 +1,16 @@
-# @svelte-stellar/css-grid
+# @nasa-jpl/svelte-css-grid
 
 ## Installation
 
 ```sh
-npm install @svelte-stellar/css-grid --save
+npm install @nasa-jpl/svelte-css-grid --save
 ```
 
 ## Usage
 
 ```svelte
 <script>
-  import { CssGrid, CssGridGutter } from '@svelte-stellar/css-grid';
+  import { CssGrid, CssGridGutter } from '@nasa-jpl/svelte-css-grid';
 </script>
 
 <CssGrid columns="1fr 5px 1fr 5px 1fr">

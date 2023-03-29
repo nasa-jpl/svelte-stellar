@@ -1,5 +1,5 @@
 <script>
-  import { CssGrid, CssGridGutter } from '@svelte-stellar/css-grid';
+  import { CssGrid, CssGridGutter } from '@nasa-jpl/svelte-css-grid';
 </script>
 
 <CssGrid columns="1fr 5px 1fr 5px 1fr">

@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@nasa-jpl/stellar": "^1.1.2",
-    "@svelte-stellar/css-grid": "./dist/css-grid"
+    "@nasa-jpl/svelte-css-grid": "./dist/css-grid"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^2.0.1",
