@@ -5,8 +5,8 @@
   "private": true,
   "exports": {
     "css-grid": {
-      "svelte": "./dist/css-grid/index.js",
-      "types": "./dist/css-grid/index.d.ts"
+      "types": "./dist/css-grid/index.d.ts",
+      "svelte": "./dist/css-grid/index.js"
     }
   },
   "files": [
