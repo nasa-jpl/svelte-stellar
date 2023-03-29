@@ -6,7 +6,7 @@
 npm install @nasa-jpl/svelte-css-grid --save
 ```
 
-## Usage
+## Usage ([example](https://nasa-jpl.github.io/svelte-stellar/css-grid.html))
 
 ```svelte
 <script>
