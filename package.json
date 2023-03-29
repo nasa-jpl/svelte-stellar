@@ -3,8 +3,17 @@
   "version": "0.0.1",
   "type": "module",
   "private": true,
+  "exports": {
+    "css-grid": {
+      "svelte": "./dist/css-grid/index.js",
+      "types": "./dist/css-grid/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "vite build && npm run package",
+    "build": "vite build",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
@@ -17,13 +26,17 @@
   "peerDependencies": {
     "svelte": "^3.57.0"
   },
+  "dependencies": {
+    "@nasa-jpl/stellar": "^1.1.2",
+    "@svelte-stellar/css-grid": "./dist/css-grid"
+  },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-static": "^2.0.1",
     "@sveltejs/kit": "^1.14.0",
     "@sveltejs/package": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
-    "eslint": "^8.36.0",
+    "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-svelte3": "^4.0.0",
     "prettier": "^2.8.7",

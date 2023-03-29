@@ -29,11 +29,11 @@
   function onDragEnd(): void {
     if (div) {
       if (columns !== 'none') {
-        const newSizes: string = div.style['grid-template-columns'];
+        const newSizes: string = div.style.getPropertyValue('grid-template-columns');
         dispatch('changeColumnSizes', newSizes);
         columns = newSizes;
       } else if (rows !== 'none') {
-        const newSizes: string = div.style['grid-template-rows'];
+        const newSizes: string = div.style.getPropertyValue('grid-template-rows');
         rows = newSizes;
         dispatch('changeRowSizes', newSizes);
       }
@@ -82,5 +82,6 @@
 <style>
   div {
     display: grid;
+    min-height: 100%;
   }
 </style>
