@@ -5,7 +5,7 @@ Svelte components for the [Stellar](https://github.com/nasa-jpl/stellar) design 
 ## Installation
 
 ```sh
-npm install @nasa-jpl/svelte-stellar --save
+npm install @nasa-jpl/svelte-stellar @nasa-jpl/stellar --save
 ```
 
 ## Usage

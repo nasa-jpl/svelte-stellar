@@ -2,6 +2,8 @@
 
 <script lang="ts">
   export let button: HTMLButtonElement | undefined = undefined;
+  export let icon: boolean = false;
+  export let large: boolean = false;
   export let secondary: boolean = false;
   export let tertiary: boolean = false;
 </script>
@@ -9,6 +11,8 @@
 <button
   bind:this={button}
   class="st-button"
+  class:icon
+  class:large
   class:secondary
   class:tertiary
   {...$$restProps}
