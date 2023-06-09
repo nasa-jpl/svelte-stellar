@@ -1,0 +1,22 @@
+<svelte:options accessors={true} immutable={true} />
+
+<script lang="ts">
+  export let button: HTMLButtonElement | undefined = undefined;
+  export let secondary: boolean = false;
+  export let tertiary: boolean = false;
+</script>
+
+<button
+  bind:this={button}
+  class="st-button"
+  class:secondary
+  class:tertiary
+  {...$$restProps}
+  on:contextmenu
+  on:click
+  on:focus
+  on:mousedown
+  on:mouseover
+>
+  <slot />
+</button>

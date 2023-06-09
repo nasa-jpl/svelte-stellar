@@ -20,9 +20,6 @@ jobs:
         run: npm ci
       - name: Package
         run: npm run package
-      - name: Publish css-grid
+      - name: Publish
         continue-on-error: true
-        run: |
-          cd dist/css-grid
-          npm publish
-          cd ../..
+        run: npm publish

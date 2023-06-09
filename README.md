@@ -1,9 +1,23 @@
-# svelte-stellar
+# @nasa-jpl/svelte-stellar
 
-A Svelte implementation of the Stellar design system for spacecraft operations tools.
+Svelte components for the [Stellar](https://github.com/nasa-jpl/stellar) design system.
 
-### [css-grid](./src/lib/css-grid)
+## Installation
 
-A [CSS grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) wrapper component that also allows for drag-resizing grid sections via [Split Grid](https://github.com/nathancahill/split/tree/master/packages/split-grid).
+```sh
+npm install @nasa-jpl/svelte-stellar --save
+```
 
-[Repository](./src/lib/css-grid) | [Example](https://nasa-jpl.github.io/svelte-stellar/css-grid.html)
+## Usage
+
+### Button
+
+```svelte
+<script lang="ts">
+  import '@nasa-jpl/stellar/css/index.css';
+  import '@nasa-jpl/stellar/font/inter/inter.css';
+  import { Button } from '../lib/index.js';
+</script>
+
+<Button>Primary</Button>
+```

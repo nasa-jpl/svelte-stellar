@@ -22,8 +22,6 @@ jobs:
           cache: npm
       - name: Install Dependencies
         run: npm ci
-      - name: Package
-        run: npm run package
       - name: Build
         run: npm run build
       - name: Upload Artifact
