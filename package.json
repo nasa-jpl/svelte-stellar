@@ -2,6 +2,7 @@
   "name": "@nasa-jpl/svelte-stellar",
   "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
