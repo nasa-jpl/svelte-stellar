@@ -1,3 +1,5 @@
+[![npm (scoped)](https://img.shields.io/npm/v/@nasa-jpl/svelte-stellar)](https://www.npmjs.com/package/@nasa-jpl/svelte-stellar)
+
 # @nasa-jpl/svelte-stellar
 
 Svelte components for the [Stellar](https://github.com/nasa-jpl/stellar) design system.
