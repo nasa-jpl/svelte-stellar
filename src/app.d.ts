@@ -1,29 +1,13 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
+// See https://kit.svelte.dev/docs/types#app
+// for information about these interfaces
 declare global {
-  namespace App {}
+	namespace App {
+		// interface Error {}
+		// interface Locals {}
+		// interface PageData {}
+		// interface PageState {}
+		// interface Platform {}
+	}
 }
 
-/**
- *  Types for imported SVGs.
- *  @see https://github.com/poppa/sveltekit-svg#typescript
- */
-declare module '*.svg' {
-  const content: any;
-  export default content;
-}
-
-declare module '*.svg?component' {
-  const content: any;
-  export default content;
-}
-
-declare module '*.svg?src' {
-  const content: string;
-  export default content;
-}
-
-declare module '*.svg?url' {
-  const content: string;
-  export default content;
-}
+export {};
