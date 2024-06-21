@@ -55,7 +55,7 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 2px)'
 			},
 			fontFamily: {
-				sans: [...fontFamily.sans]
+				sans: ['Inter', ...fontFamily.sans]
 			}
 		}
 	}
