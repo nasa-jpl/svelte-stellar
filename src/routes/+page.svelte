@@ -1,10 +1,18 @@
 <script lang="ts">
-	import Badge from '$lib/components/ui/badge/badge.svelte';
-	import ThemeSwitcherButton from '$lib/components/ui/theme-switcher/theme-switcher-button.svelte';
-	import ThemeSwitcherDropdown from '$lib/components/ui/theme-switcher/theme-switcher-dropdown.svelte';
-	import { DropdownMenu, Popover } from '$lib/index.js';
-	import { Button } from '$lib/index.js';
-	import { ModeWatcher } from 'mode-watcher';
+	import {
+		Badge,
+		H1,
+		H2,
+		H3,
+		H4,
+		P,
+		ThemeSwitcherButton,
+		ThemeSwitcherDropdown,
+		ModeWatcher,
+		DropdownMenu,
+		Popover,
+		Button
+	} from '$lib/index.js';
 </script>
 
 <ModeWatcher />
@@ -20,6 +28,18 @@
 			<Button size="sm" on:click={() => console.log(1)}>Click me</Button>
 			<Button size="lg" on:click={() => console.log(1)}>Click me</Button>
 		</div>
+	</div>
+	<div>
+		Typography
+		<H1>Heading 1</H1>
+		<H2>Heading 2</H2>
+		<H3>Heading 3</H3>
+		<H4>Heading 4</H4>
+		<P class="max-w-prose">
+			Space is big. You just won't believe how vastly, hugely, mind-bogglingly big it is. I mean,
+			you may think it's a long way down the road to the chemist's, but that's just peanuts to
+			space.
+		</P>
 	</div>
 	<div>
 		Theme Switchers
