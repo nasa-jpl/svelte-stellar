@@ -21,8 +21,8 @@
 
 <ModeWatcher />
 
-<div class="flex flex-col gap-4 bg-background p-6">
-	<div class="text-2xl font-extrabold">Demo</div>
+<div class="p-16 flex flex-col gap-4 bg-background">
+	<div class="text-4xl font-extrabold mb-4">Svelte Stellar</div>
 	<div>
 		Button
 		<div class="flex items-center gap-4">
