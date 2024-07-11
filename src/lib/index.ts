@@ -12,12 +12,14 @@ import {
 import { H1, H2, H3, H4, P } from './components/ui/typography/index.js';
 import * as Alert from './components/ui/alert/index.js';
 import { AspectRatio } from './components/ui/aspect-ratio/index.js';
+import * as Breadcrumb from "./components/ui/breadcrumb/index.js"
 
 export {
 	Alert,
 	AlertDialog,
 	AspectRatio,
 	Button,
+  Breadcrumb,
 	Popover,
 	DropdownMenu,
 	Badge,

@@ -14,15 +14,16 @@
 		Button,
 		Alert,
 		AlertDialog,
-		AspectRatio
+		AspectRatio,
+    Breadcrumb
 	} from '$lib/index.js';
 	import { Terminal } from 'lucide-svelte';
 </script>
 
 <ModeWatcher />
 
-<div class="p-16 flex flex-col gap-4 bg-background">
-	<div class="text-4xl font-extrabold mb-4">Svelte Stellar</div>
+<div class="flex flex-col gap-4 bg-background p-16">
+	<div class="mb-4 text-4xl font-extrabold">Svelte Stellar</div>
 	<div>
 		Button
 		<div class="flex items-center gap-4">
@@ -132,6 +133,26 @@
 					/>
 				</AspectRatio>
 			</div>
+		</div>
+	</div>
+	<div>
+		Breadcrumbs
+		<div>
+			<Breadcrumb.Root>
+				<Breadcrumb.List>
+					<Breadcrumb.Item>
+						<Breadcrumb.Link href="/">Home</Breadcrumb.Link>
+					</Breadcrumb.Item>
+					<Breadcrumb.Separator />
+					<Breadcrumb.Item>
+						<Breadcrumb.Link href="/components">Components</Breadcrumb.Link>
+					</Breadcrumb.Item>
+					<Breadcrumb.Separator />
+					<Breadcrumb.Item>
+						<Breadcrumb.Page>Breadcrumb</Breadcrumb.Page>
+					</Breadcrumb.Item>
+				</Breadcrumb.List>
+			</Breadcrumb.Root>
 		</div>
 	</div>
 </div>
